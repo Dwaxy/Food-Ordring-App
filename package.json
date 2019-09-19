@@ -1,0 +1,24 @@
+{
+  "name": "food-ordring-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dwaxy/Food-Ordring-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dwaxy/Food-Ordring-App/issues"
+  },
+  "homepage": "https://github.com/Dwaxy/Food-Ordring-App#readme",
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "bulma": "^0.7.5",
+    "jquery": "^3.4.1"
+  }
+}
