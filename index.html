@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-navbar-fixed-top">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,45 @@
     <link rel="stylesheet" href="dist/css/index.min.css">
 </head>
 <body>
-  <div class="container">
-      <p>thing</p>
+  <div id="home">
+
+      <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="assets/icons/bblogo.jpg" width="112" height="28">
+          </a>
+      
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="" class="navbar-item">Burgers</a>
+            <a href="" class="navbar-item">Sides</a>
+            <a href="" class="navbar-item">Kids Meals</a>
+            <a href="" class="navbar-item">Drinks</a>
+          </div>
+      
+        </div>
+      </nav>
+
+
+
+    <div class="columns is-tablet is-gapless menu">
+      <div class="column is-three-quarters-tablet">
+
+      </div>
+
+      <div class="column cart">
+
+      </div>
+
+    </div>
+
   </div>
 </body>
 </html>
