@@ -4,9 +4,30 @@
 
 $darkBlue: #093E52
 
-@import "lib/_mixins.scss"
+// Bulma Settings for Nav
+$navbar-item-color: $darkBlue
+$navbar-item-hover-color: $darkBlue
+$navbar-item-hover-background-color: white
+$navbar-item-active-color: red
+$navbar-burger-color: $darkBlue
+$navbar-tab-active-border-bottom-color: $darkBlue
+$navbar-height: 4rem
+
+// Layout vars
+// =fullHeightWithNav
+//     height: calc(100vh - $navbar-height)
+
+@import "../node_modules/node-normalize-scss/_normalize.scss"
 
 @import "../node_modules/bulma/bulma.sass"
+@import "lib/_mixins.scss"
+@import "lib/_base.sass"
+
+
+//
+// COMPS
+//
+@import "components/_buttons.sass"
 
 
 //

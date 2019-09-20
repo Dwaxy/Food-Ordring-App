@@ -1,4 +1,30 @@
 #home
     .menu, .cart
-        height: 100vh
-        
+        height: calc( 100vh - 4rem )
+        //+fullHeightWithNav()
+    .cart
+        background-color: pink
+        .cart-heading, #cart-blurb
+            margin: 0 auto
+            text-align: center
+            padding: 30px
+            color: $darkBlue
+        .cart-heading
+            padding: 60px
+            h3
+                padding-bottom: 15px
+            .underline
+                +underline(200px)
+
+
+        .temp-help-button
+            margin: 0 auto
+
+    .menu
+        .menu-header
+            padding: 60px 60px 30px 60px
+            text-align: center
+            h2
+                padding-bottom: 15px
+            .underline
+                +underline(200px)

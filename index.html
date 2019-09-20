@@ -12,8 +12,8 @@
 
       <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a class="navbar-item" href="https://bulma.io">
-            <img src="assets/icons/bblogo.jpg" width="112" height="28">
+          <a class="navbar-item logo-holder" href="https://bulma.io">
+            <img class="logo" src="assets/icons/bblogo.jpg" width="112" height="28">
           </a>
       
           <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -23,30 +23,80 @@
           </a>
         </div>
       
-        <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-menu">
           <div class="navbar-start">
-            <a href="" class="navbar-item">Burgers</a>
-            <a href="" class="navbar-item">Sides</a>
-            <a href="" class="navbar-item">Kids Meals</a>
-            <a href="" class="navbar-item">Drinks</a>
+            <a href="#" class="navbar-item">Burgers</a>
+            <a href="#" class="navbar-item">Sides</a>
+            <a href="#" class="navbar-item">Kids Meals</a>
+            <a href="#" class="navbar-item">Drinks</a>
           </div>
       
         </div>
       </nav>
 
+    <div class="columns is-tablet is-gapless">
+      <div class="column is-two-thirds-tablet menu">
+        <div class="menu-header">
+          <h2>Burgers</h2>
+          <div class="underline"></div>
+        </div>
 
+        <!-- MENU ITEM COMP -->
+        
+        <div class="menu-item">
+          <div class="holder">
+            <span class="title"> </span>
+            
+            <span class="price"> </span>
+          </div>
 
-    <div class="columns is-tablet is-gapless menu">
-      <div class="column is-three-quarters-tablet">
+          <div class="image"></div>
+          
+          <div class="review-holder">
+            <div class="stars">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <span class="review-count"></span>
+
+          </div>
+
+          <div class="info-button">
+            <span>View Info</span>
+          </div>
+
+        </div>
+
+        <!-- END MENU ITEM COMP -->
+
 
       </div>
 
       <div class="column cart">
+        <div class="cart-heading">
+          <h3>Your Order</h3>
+          <div class="underline"></div>
+        </div>
+
+        <div id="cart-blurb">
+          <p>Tap items to add them to your order.</p>
+          <p>Tap "Ask for assistance" to ask staff for help</p>
+        </div>
+
+        <div id="cart-help-button" class="temp-help-button">
+          <button>Ask For Assistance</button>
+        </div>
 
       </div>
 
     </div>
 
   </div>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="js/lib/nav.js"></script>
 </body>
 </html>

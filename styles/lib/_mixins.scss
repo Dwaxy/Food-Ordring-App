@@ -1,0 +1,39 @@
+// ABS position
+// From CSS tricks
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+// Sets some base image styles 
+
+@mixin coverImage {
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin underline($width: 300px) {
+    width: $width;
+    height: 4px;
+    background-color: $darkBlue;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+// @mixin fullHeightWithNav {
+
+//   height: calc(100vh - $navbar-height);
+    
+// }

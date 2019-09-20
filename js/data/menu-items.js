@@ -15,9 +15,11 @@ const menuItems = {
 
     drinks: [
 
-        sodas: {
+        sodas: [
             "title": "old-fashioned lemonade",
-        },
+            price: 5.50
+            info: "Made by us with fresh fruits & spices, topped with deliciously cool soda water."
+        ],
 
     ],
 }

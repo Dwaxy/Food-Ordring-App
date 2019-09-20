@@ -19,6 +19,7 @@
   "dependencies": {
     "animate.css": "^3.7.2",
     "bulma": "^0.7.5",
-    "jquery": "^3.4.1"
+    "jquery": "^3.4.1",
+    "node-normalize-scss": "^8.0.1"
   }
 }
