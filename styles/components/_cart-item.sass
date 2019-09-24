@@ -1,0 +1,26 @@
+.cart-item
+    height: 150px
+    display: flex
+    .left, .right
+        width: 100px
+        height: 100%
+        .image
+            +coverImage()
+            width: 100pxpx
+            height: 100px
+            border-radius: 100%
+        .price
+            padding: 10px
+            +flexCenter()
+    .mid
+        width: 100%
+        .stars
+            margin: 0 auto
+            +flexCenter()
+        .underline
+            +underline(200px, 2px)
+        .toggleReviews
+            text-align: center
+
+#cartitem-template
+    display: none

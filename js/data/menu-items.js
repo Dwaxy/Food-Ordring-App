@@ -1,25 +1,28 @@
 const menuItems = {
     burgers: [
-        beefCheese: {
-            
-        }
-    ],
-
-    sides: [
-
-    ],
-
-    kidsMeals: [
-
+        {
+            cat: "burgers",
+            title: "Beef & Cheese",
+            price: "$15",
+            reviews: 12,
+            stars: 4,
+            askAge: false,
+            image: "../../assets/images/Beef-Cheese.jpg",
+        },
+        {
+            cat: "burgers",
+            title: "Double Beef & Cheese",
+            price: "$22",
+            reviews: null,
+            stars: null,
+            askAge: true,
+            image: "../../assets/images/Beef-Cheese.jpg",
+        },
     ],
 
     drinks: [
+        {
 
-        sodas: [
-            "title": "old-fashioned lemonade",
-            price: 5.50
-            info: "Made by us with fresh fruits & spices, topped with deliciously cool soda water."
-        ],
-
-    ],
+        },
+    ]
 }

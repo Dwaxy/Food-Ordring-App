@@ -1,7 +1,6 @@
 
 .navbar
     .logo-holder
-        //+coverImage()
         width: 200px * 1
         height: 98px * 1
         +flexCenter()
@@ -10,7 +9,10 @@
             height: 100%
             +coverImage()
 
-    .is-active-nav-item
-        border-bottom: 4px solid $darkBlue
-        // .navbar-menu
-    //     +flexCenter()
+    .navbar-menu
+        +flexCenter()
+        .navbar-start
+            .is-active-nav-item
+                border-bottom: 4px solid $darkBlue
+            .navbar-item
+                font-family: 'Permanent Marker', cursive

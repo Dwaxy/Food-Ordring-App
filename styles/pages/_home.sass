@@ -1,30 +1,63 @@
 #home
     .menu, .cart
-        height: calc( 100vh - 4rem )
-        //+fullHeightWithNav()
-    .cart
-        background-color: pink
-        .cart-heading, #cart-blurb
-            margin: 0 auto
-            text-align: center
-            padding: 30px
-            color: $darkBlue
-        .cart-heading
-            padding: 60px
-            h3
-                padding-bottom: 15px
-            .underline
-                +underline(200px)
-
-
-        .temp-help-button
-            margin: 0 auto
+        min-height: calc( 100vh - 4rem )
 
     .menu
         .menu-header
             padding: 60px 60px 30px 60px
             text-align: center
+            font-family: 'Permanent Marker', cursive
+            font-size: 20px
             h2
                 padding-bottom: 15px
             .underline
                 +underline(200px)
+    .is-one-third
+        display: flex
+        justify-content: center
+        position: relative
+
+    #of-age-background, #of-age-modal
+        position: fixed
+        top: 0
+        width: 100%
+        height: 100%
+
+    #of-age-background
+        opacity: 0.5
+        background-color: $darkBlue
+    #of-age-modal
+        opacity: 1
+        +flexCenter()
+        .holder
+            background-color: $white
+            opacity: 1
+            max-width: 1000px
+            min-width: 300px
+            height: 400px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            .heading, .blurb
+                text-align: center
+                padding: 30px
+                color: $darkBlue
+            .heading
+                margin-top: 30px
+                font-size: 30px
+                padding-bottom: 0px
+        .buttons
+            margin-bottom: 0
+            width: 100%
+            height: 100px
+            display: flex
+            button
+                width: 50%
+                height: 100%
+                +flexCenter()
+                +buttonReset()
+                font-size: 25px
+            .yes
+                background-color: $darkBlue 
+                color: $white
+

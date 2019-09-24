@@ -25,6 +25,7 @@
       
         <div class="navbar-menu">
           <div class="navbar-start">
+            <a href="#" class="navbar-item">Specials</a>
             <a href="#" class="navbar-item">Burgers</a>
             <a href="#" class="navbar-item">Sides</a>
             <a href="#" class="navbar-item">Kids Meals</a>
@@ -35,68 +36,164 @@
       </nav>
 
     <div class="columns is-tablet is-gapless">
-      <div class="column is-two-thirds-tablet menu">
+      <div class="column menu">
+
         <div class="menu-header">
           <h2>Burgers</h2>
           <div class="underline"></div>
         </div>
 
-        <!-- MENU ITEM COMP -->
-        
-        <div class="menu-item">
-          <div class="holder">
-            <span class="title"> </span>
-            
-            <span class="price"> </span>
-          </div>
-
-          <div class="image"></div>
+        <!-- The holder for a section of menu -->
+        <div class="menu-holder">
+          <!-- MENU ITEM COMP -->
           
-          <div class="review-holder">
-            <div class="stars">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
+          <div class="menu-item">
+            <div class="holder">
+              <span class="name"></span>
+              
+              <span class="price"></span>
             </div>
 
-            <span class="review-count"></span>
+            <div class="image"></div>
+            
+            <div class="review-holder">
+              <div class="stars">
+                <span>&#9734</span>
+                <span>&#9734</span>
+                <span>&#9734</span>
+                <span>&#9734</span>
+                <span>&#9734</span>
+              </div>
+
+              <span class="review-count"></span>
+
+            </div>
+
+            <div class="info-button">
+              <button>View Info</button>
+            </div>
 
           </div>
 
-          <div class="info-button">
-            <span>View Info</span>
+          <!-- END MENU ITEM COMP -->
+
+          <!-- MENU ITEM COMP -->
+          
+          <div class="menu-item">
+            <div class="holder">
+              <span class="name"></span>
+              
+              <span class="price"></span>
+            </div>
+
+            <div class="image"></div>
+            
+            <div class="review-holder">
+              <div class="stars">
+                <span>&#9734</span>
+                <span>&#9734</span>
+                <span>&#9734</span>
+                <span>&#9734</span>
+                <span>&#9734</span>
+              </div>
+
+              <span class="review-count"></span>
+
+            </div>
+
+            <div class="info-button">
+              <button>View Info</button>
+            </div>
+
           </div>
 
-        </div>
+          <!-- END MENU ITEM COMP -->
+        
+      </div>
+      </div>
 
-        <!-- END MENU ITEM COMP -->
+      <div class="column is-one-third">
+        <div class="cart">
+          <div class="cart-heading">
+            <h3>Your Order</h3>
+            <div class="underline"></div>
+          </div>
+
+          <div id="cart-blurb">
+            <p>Tap items to add them to your order.</p>
+          <br/>
+            <p>Tap "Ask for assistance" to ask staff for help</p>
+          </div>
+
+          <div id="cart-help-button" class="temp-help-button">
+            <button>Ask For Assistance</button>
+          </div>
+
+          <div class="item-holder">
+            <div class="cart-item" id="cartitem-template">
+
+              <div class="left">
+                <div class="image"></div>
+                <div class="price"></div>
+              </div>
+
+              <div class="mid">
+                <div class="title">
+
+                </div>
+                <div class="stars">
+
+                </div>
+                <div class="underline"></div>
+                <div class="toggleReviews">
+                  <span>View Reviews</span>
+                </div>
+              </div>
+
+              <div class="right">
+                <div class="info"></div>
+                <div class="remove"></div>
+              </div>
+
+            </div>
+          </div>
 
 
       </div>
+      </div>
 
-      <div class="column cart">
-        <div class="cart-heading">
-          <h3>Your Order</h3>
-          <div class="underline"></div>
+    </div>
+
+    <div id="of-age-background"></div>
+    <div id="of-age-modal">
+
+      <div class="holder">
+        <div class="heading">Are you over 18?</div>
+        <div class="blurb">Our staff will ask for ID if you look under 25
+            when they bring your order.</div>
+
+        <div class="buttons">
+          <button class="yes">Yes</button>
+          <button class="no">No</button>
         </div>
-
-        <div id="cart-blurb">
-          <p>Tap items to add them to your order.</p>
-          <p>Tap "Ask for assistance" to ask staff for help</p>
-        </div>
-
-        <div id="cart-help-button" class="temp-help-button">
-          <button>Ask For Assistance</button>
-        </div>
-
       </div>
 
     </div>
 
   </div>
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="js/data/menu-items.js"></script>
   <script src="js/lib/nav.js"></script>
+  <script src="js/lib/ofAgeModal.js"></script>
+  <script src="js/lib/addToCart.js"></script>
+  <script src="js/lib/setMenuData.js"></script>
 </body>
 </html>
+
+<!-- TODO
+
+  Button comp style not applying
+
+  How to over ride bulma styles
+
+-->

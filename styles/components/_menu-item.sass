@@ -1,4 +1,23 @@
 .menu
     .menu-item
+        width: 300px
+        height: 500px
+        .holder
+            display: flex
+            justify-content: space-between
+            align-items: center
+            span
+                margin-bottom: 20px
         .image
-            background-image: url("../../../assets/image/Beef-Cheese.jpg")
+            width: 300px
+            height: 300px
+            +coverImage()
+            cursor: pointer
+        .review-holder
+            display: none
+            justify-content: space-between
+            color: $darkBlue
+        .stars span
+            font-size: 25px
+        .review-count
+            +flexCenter()

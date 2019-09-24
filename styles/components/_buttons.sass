@@ -6,7 +6,26 @@
     +flexCenter()
     button
         text-align: center
-        padding: 30px
-        border: 0
-        background-color: transparent
+        padding: 20px
+        +buttonReset()
         color: $darkBlue
+        letter-spacing: 1px
+        font-size: 20px
+
+.main-button, .info-button
+    width: 250px
+    border-radius: 15px
+    background-color: $darkBlue
+    +flexCenter()
+    margin: 0 auto
+    margin-top: 15px
+    button
+        padding: 15px
+        color: $white
+        font-size: 20px
+        font-family: 'Roboto', sans-serif
+        letter-spacing: 1px
+        +buttonReset()
+
+
+

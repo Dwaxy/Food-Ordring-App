@@ -24,12 +24,18 @@
     align-items: center;
 }
 
-@mixin underline($width: 300px) {
+@mixin underline($width: 300px, $height: 4px) {
     width: $width;
-    height: 4px;
+    height: $height;
     background-color: $darkBlue;
     border-radius: 50px;
     margin: 0 auto;
+}
+
+@mixin buttonReset {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
 }
 
 // @mixin fullHeightWithNav {

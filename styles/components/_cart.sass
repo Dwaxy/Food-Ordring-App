@@ -1,0 +1,29 @@
+.cart
+    min-width: 300px
+    width: 33.3333%
+    display: flex
+    flex-direction: column
+    position: fixed
+    .cart-heading, #cart-blurb
+        text-align: center
+        padding: 30px
+    #cart-blurb
+        margin-top: 50%
+    .cart-heading
+        padding: 60px
+        h3
+            padding-bottom: 15px
+            font-family: 'Permanent Marker', cursive
+            font-size: 20px
+        .underline
+            +underline(200px)
+    #cart-help-button
+        margin-bottom: 50px
+        margin-top: 70%
+    .item-holder
+        display: none
+        position: relative
+        top: 0
+        height: 100%
+        overflow: hidden
+        overflow-y: scroll

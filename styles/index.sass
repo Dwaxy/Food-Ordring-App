@@ -3,6 +3,7 @@
 //
 
 $darkBlue: #093E52
+$white: white
 
 // Bulma Settings for Nav
 $navbar-item-color: $darkBlue
@@ -13,27 +14,37 @@ $navbar-burger-color: $darkBlue
 $navbar-tab-active-border-bottom-color: $darkBlue
 $navbar-height: 4rem
 
-// Layout vars
-// =fullHeightWithNav
-//     height: calc(100vh - $navbar-height)
+//
+// Normalize
+//
+@import "../node_modules/normalize.scss/normalize.scss"
 
-@import "../node_modules/node-normalize-scss/_normalize.scss"
+//
+// FONTS
+//
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap')
+//
+// LIB
+//
 
 @import "../node_modules/bulma/bulma.sass"
+@import "../node_modules/include-media/dist/_include-media.scss"
 @import "lib/_mixins.scss"
 @import "lib/_base.sass"
-
 
 //
 // COMPS
 //
 @import "components/_buttons.sass"
-
+@import "components/_menu-item.sass"
+@import "components/_menu.sass"
+@import "components/_cart.sass"
+@import "components/_cart-item.sass"
 
 //
 //  PAGES
 //
-
 @import "pages/_eta.sass"
 @import "pages/_home.sass"
 @import "pages/_order-complete.sass"
