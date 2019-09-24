@@ -3,7 +3,7 @@ const menuItems = {
         {
             cat: "burgers",
             title: "Beef & Cheese",
-            price: "$15",
+            price: 15,
             reviews: 12,
             stars: 4,
             askAge: false,
@@ -12,7 +12,7 @@ const menuItems = {
         {
             cat: "burgers",
             title: "Double Beef & Cheese",
-            price: "$22",
+            price: 22,
             reviews: null,
             stars: null,
             askAge: true,

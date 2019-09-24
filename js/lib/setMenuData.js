@@ -1,25 +1,33 @@
 
 setData = function(el, data, perant) {
-    if(data === null || undefined || false) {
+    if(!data) {
         return
     }
     $(perant).find(el).text(data)
+}
 
+setStars = function(stars, el) {
+    const counts = [
+        "☆☆☆☆☆",
+        "★☆☆☆☆",
+        "★★☆☆☆",
+        "★★★☆☆",
+        "★★★★☆",
+        "★★★★★"
+    ]
+    $(el).find(".stars > span").text(counts[stars])
 }
 
 buildMenuItem = function(i, item, itemArray) {
     const data = itemArray[i]
     setData(".name", data.title, item)
-    setData(".price", data.price, item)
+    setData(".price", "$"+data.price, item)
     $(item).find(".image").css("background-image", "url(" + data.image + ")")
     // Set review stars if item has them
     if(data.reviews !== null && data.stars !== null) {
 
         $(item).find(".review-holder").css("display", "flex")
-        for (let i = 0; i < data.stars -1; i++) {
-            $(item).find(".stars > span").text("★")
-            
-        }
+        setStars(data.stars, item)
         setData(".review-count", data.reviews + " Reviews", item)
     }
 

@@ -4,6 +4,8 @@
     border-radius: 15px
     border: 4px solid $darkBlue
     +flexCenter()
+    margin: 0 auto
+    margin-bottom: 50px
     button
         text-align: center
         padding: 20px
@@ -27,5 +29,24 @@
         letter-spacing: 1px
         +buttonReset()
 
-
-
+#help-order-buttons
+    display: none
+    width: 400px
+    min-width: 300px
+    position: fixed 
+    bottom: 50px
+    margin: 0 auto
+    button
+        +buttonReset()
+        padding: 20px
+        font-size: 15px
+        width: 50%
+        margin: 0
+    #order
+        background-color: $darkBlue
+        color: $white
+        border-radius: 0 15px 15px 0
+    .help
+        border: 4px solid $darkBlue
+        color: $darkBlue
+        border-radius: 15px 0 0 15px
