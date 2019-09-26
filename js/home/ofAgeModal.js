@@ -9,7 +9,6 @@ $(function() {
 var modalShowing = false 
 
 $(document).on('click', ".askAge", function() {
-    console.log("is ask age")
     if(modalShowing === false) {
         $("#of-age-modal, #of-age-background").show()
         modalShowing = true

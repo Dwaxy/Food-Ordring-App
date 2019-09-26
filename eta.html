@@ -8,8 +8,40 @@
     <link rel="stylesheet" href="dist/css/index.min.css">
 </head>
 <body>
-  <div class="container">
-      <p>eta</p>
+  <div class="holder" id="eta">
+    
+    <div class="header">
+      <h1>We'll Get Right To It.</h1>
+    </div>
+
+    <div class="eta-holder">
+      <span class="eta"></span>
+      <div class="loading-bar">
+        <div class="colors">
+          <span class="light-red"></span>
+          <span class="red"></span>
+        </div>
+        <div id="bar">
+        </div>
+      </div>
+
+      <div class="underline"></div>
+      <div class="status">
+        Pouring
+      </div>
+    </div>
+
+    <p class="blurb">Staff will be automatically be notified if your order is overdue.</p>
+
+    <div class="help-button">
+      <button>Ask  For Assistance</button>
+    </div>
+
   </div>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="js/lib/helpers.js"></script>
+  <script src="js/data/menu-items.js"></script>
+  <script src="js/eta/eta.js"></script>
 </body>
 </html>

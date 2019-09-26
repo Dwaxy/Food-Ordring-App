@@ -1,23 +1,4 @@
 
-setData = function(el, data, perant) {
-    if(!data) {
-        return
-    }
-    $(perant).find(el).text(data)
-}
-
-setStars = function(stars, el) {
-    const counts = [
-        "☆☆☆☆☆",
-        "★☆☆☆☆",
-        "★★☆☆☆",
-        "★★★☆☆",
-        "★★★★☆",
-        "★★★★★"
-    ]
-    $(el).find(".stars > span").text(counts[stars])
-}
-
 buildMenuItem = function(i, item, itemArray) {
     const data = itemArray[i]
     setData(".name", data.title, item)
@@ -44,8 +25,8 @@ buildMenuItem = function(i, item, itemArray) {
 
 $(function() { 
     // TODO support diff types of food, loop for drinks page, ect
-    $('.menu-item').each(function(i, obj) {
+    $('.menu-item').each(function(index, obj) {
         const item = $(this)
-        buildMenuItem(i, item, menuItems.burgers)
+        buildMenuItem(index, item, menuItems.burgers)
     })
 })

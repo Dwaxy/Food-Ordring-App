@@ -1,5 +1,5 @@
 .cart-item
-    height: 110px
+    // height: 110px
     display: flex
     .left, .right
         width: 100px
@@ -7,8 +7,8 @@
     .left
         .image
             +coverImage()
-            width: 100%
-            height: 50%
+            width: 60px
+            height: 60px
             border-radius: 100%
         .price
             padding: 10px
@@ -19,6 +19,9 @@
         width: 100%
         margin-left: 10px
         margin-right: 10px
+        .name
+            font-size: 20px
+            text-align: center
         .stars
             margin: 0 auto
             font-size: 30px
@@ -29,6 +32,18 @@
         .toggleReviews
             text-align: center
             color: $darkBlue
+    .right
+        padding-top: 25px
+        +flexCenter()
+        .remove-cart-item
+            cursor: pointer
+            font-size: 20px
+            border-radius: 100%
+            border: 2px solid $darkBlue
+            color: $darkBlue
+            width: 35px
+            height: 35px
+            +flexCenter()
 
 #cartitem-template
     display: none

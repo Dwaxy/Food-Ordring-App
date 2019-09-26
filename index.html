@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="dist/css/index.min.css">
 </head>
 <body>
+  <script>
+    //Reset local storage and the end of the user flow loop
+    localStorage.clear()  
+  </script>
   <div id="home">
 
       <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
@@ -110,6 +114,7 @@
             <h3>Your Order</h3>
             <div class="underline"></div>
           </div>
+          <span id="total-price"></span>
 
           <div id="cart-blurb">
             <p>Tap items to add them to your order.</p>
@@ -130,7 +135,7 @@
               </div>
 
               <div class="mid">
-                <div class="title">
+                <div class="name">
 
                 </div>
                 <div class="stars">
@@ -138,21 +143,16 @@
                 </div>
                 <div class="underline"></div>
                 <div class="toggleReviews">
-                  <span>View Reviews</span>
+                  <span></span>
                 </div>
               </div>
 
               <div class="right">
-                <div class="info"></div>
-                <div class="remove"></div>
+                <div class="remove-cart-item">✕</div>
               </div>
 
             </div>
           </div>
-
-          <span id="total-price">
-
-          </span>
 
           <div id="help-order-buttons">
             <button class="help">Ask For Assistance</button>
@@ -182,12 +182,14 @@
 
   </div>
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="js/lib/helpers.js"></script>
   <script src="js/data/menu-items.js"></script>
-  <script src="js/lib/nav.js"></script>
-  <script src="js/lib/ofAgeModal.js"></script>
-  <script src="js/lib/addToCart.js"></script>
-  <script src="js/lib/setMenuData.js"></script>
-  <script src="js/lib/makeOrder.js"></script>
+  <script src="js/home/nav.js"></script>
+  <script src="js/home/ofAgeModal.js"></script>
+  <script src="js/home/addToCart.js"></script>
+  <script src="js/home/removeFromCart.js"></script>
+  <script src="js/home/setMenuData.js"></script>
+  <script src="js/home/makeOrder.js"></script>
 </body>
 </html>
 

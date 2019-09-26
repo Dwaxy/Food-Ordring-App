@@ -8,6 +8,7 @@ const menuItems = {
             stars: 4,
             askAge: false,
             image: "../../assets/images/Beef-Cheese.jpg",
+            eta: 5
         },
         {
             cat: "burgers",
@@ -17,6 +18,7 @@ const menuItems = {
             stars: null,
             askAge: true,
             image: "../../assets/images/Beef-Cheese.jpg",
+            eta: 7
         },
     ],
 
@@ -26,3 +28,4 @@ const menuItems = {
         },
     ]
 }
+
