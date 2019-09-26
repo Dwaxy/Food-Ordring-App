@@ -9,9 +9,12 @@ function move() {
             clearInterval(id);
         } else {
             width++;
-            elem.style.width = width + '%';
+            elem.style.width = width + '%'
         }
     }
+    setTimeout(function(){
+        window.location.replace("/item-reviews.html")
+    }, 3000)
 }
 
 move()

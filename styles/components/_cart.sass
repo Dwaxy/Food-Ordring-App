@@ -1,7 +1,6 @@
 .cart
-    min-width: 300px
-    max-width: 400px
-    width: 33.3333%
+    width: 340px
+    min-width: 340px
     display: flex
     flex-direction: column
     position: fixed
@@ -30,9 +29,13 @@
         display: none
         position: relative
         top: 0
-        min-height: 100vh
-        height: auto
+        min-height: calc(100vh - 420px)
         padding-left: 20px
         overflow: hidden
-        overflow-y: scroll
+        overflow-y: auto
         border-left: 3px solid $darkBlue
+    .button-holder
+        width: 100%
+        height: auto
+        position: relative
+        +flexCenter()

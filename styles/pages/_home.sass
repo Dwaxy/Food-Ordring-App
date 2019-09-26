@@ -1,6 +1,18 @@
 #home
-    .menu, .cart
+    .cart-menu-holder
+        display: flex
+        width: 100%
+    .menu, .cart-holder, .cart
         min-height: calc( 100vh - 4rem )
+
+    .menu
+        width: calc(100% - 350px)
+
+    .cart-holder
+        width: 350px
+        min-width: 350px
+        float: right
+        position: relative
 
     .menu
         .menu-header
