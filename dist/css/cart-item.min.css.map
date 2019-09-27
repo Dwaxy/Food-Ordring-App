@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,UAAU,AAAC,CACP,KAAK,CAAE,KAAK,CACZ,OAAO,CAAE,IAAI,CAMF,AARf,AAGI,UAHM,CAGN,GAAG,AAAC,CACA,MAAM,CAAE,aAAa,CAAG,AAJhC,AAKI,UALM,CAKN,KAAK,CALT,UAAU,CAKC,MAAM,AAAC,CACV,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CAAG",
-    "sources": [
-        "../../styles/components/cart-item.sass"
-    ],
-    "names": [],
-    "file": "cart-item.min.css"
-}

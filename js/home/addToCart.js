@@ -4,25 +4,24 @@ $(".menu-item").click(function() {
     $("#help-order-buttons").css("display", "flex")
 })
 
-buildCartItem = function(i) {
-    const template = $("#cartitem-template")
-    
-    template
-        .removeAttr("id")
+buildCartItem = function(menuItem) {
+    const newCartItem = $("#cartitem-template")
         .clone(false)
-    // TODO Fix duplication issue 
-    const newCartItem = template
-    $(newCartItem).insertAfter(".cart-item")
+        .removeAttr("id")
 
+    console.log(newCartItem)
+
+    newCartItem.insertAfter("#cartitem-template")
     //Get object and index atts from clicked menu item
     //Also set that same data into the dom of the cart item
     //As well as set that data to local storage
 
     const noOrderItems = getAndSetLocalStorage.get()
-    const data = getAndSetDomData(i, newCartItem, noOrderItems === null ? 0 : noOrderItems.length++)
+    const data = getAndSetDomData(menuItem, newCartItem, noOrderItems === null ? 0 : noOrderItems.length++)
+    //console.log(data)
 
     // Apply data to the cloned cart item template
-    $(".cart-item").find(".image").css("background-image", "url(" + data.image + ")")
+    newCartItem.find(".image").css("background-image", "url(" + data.image + ")")
     setData(".price", "$"+data.price, newCartItem)
     setData(".name", data.title, newCartItem)
     if(data.reviews) {

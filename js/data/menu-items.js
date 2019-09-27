@@ -7,7 +7,7 @@ const menuItems = {
             reviews: 12,
             stars: 4,
             askAge: false,
-            image: "../../assets/images/Beef-Cheese.jpg",
+            image: "../../assets/images/burger.jpg",
             eta: 5
         },
         {
@@ -17,7 +17,7 @@ const menuItems = {
             reviews: null,
             stars: null,
             askAge: true,
-            image: "../../assets/images/Beef-Cheese.jpg",
+            image: "../../assets/images/burger.jpg",
             eta: 7
         },
 
@@ -28,7 +28,7 @@ const menuItems = {
             reviews: 11,
             stars: 5,
             askAge: null,
-            image: "../../assets/images/Beef-Cheese.jpg",
+            image: "../../assets/images/burger.jpg",
             eta: 7,
         },
 
@@ -39,7 +39,7 @@ const menuItems = {
             reviews: 25,
             stars: 2,
             askAge: null,
-            image: "../../assets/images/Beef-Cheese.jpg",
+            image: "../../assets/images/burger.jpg",
             eta: 7,
         },
 
@@ -50,7 +50,7 @@ const menuItems = {
             reviews: 29,
             stars: 5,
             askAge: null,
-            image: "../../assets/images/Beef-Cheese.jpg",
+            image: "../../assets/images/burger.jpg",
             eta: 7,
         },
 
@@ -61,7 +61,7 @@ const menuItems = {
             reviews: 8,
             stars: 3,
             askAge: null,
-            image: "../../assets/images/Beef-Cheese.jpg",
+            image: "../../assets/images/burger.jpg",
             eta: 7,
         },
 
@@ -72,7 +72,7 @@ const menuItems = {
             reviews: 34,
             stars: 5,
             askAge: null,
-            image: "../../assets/images/Beef-Cheese.jpg",
+            image: "../../assets/images/burger.jpg",
             eta: 7,
         },
 
@@ -83,7 +83,7 @@ const menuItems = {
             reviews: 18,
             stars: 4,
             askAge: null,
-            image: "../../assets/images/Beef-Cheese.jpg",
+            image: "../../assets/images/burger.jpg",
             eta: 7,
         },
 
@@ -94,7 +94,7 @@ const menuItems = {
             reviews: 12,
             stars: 1,
             askAge: null,
-            image: "../../assets/images/Beef-Cheese.jpg",
+            image: "../../assets/images/burger.jpg",
             eta: 7,
         },
 
@@ -105,7 +105,7 @@ const menuItems = {
             reviews: 48,
             stars: 5,
             askAge: null,
-            image: "../../assets/images/Beef-Cheese.jpg",
+            image: "../../assets/images/burger.jpg",
             eta: 7,
         },
 
@@ -116,7 +116,7 @@ const menuItems = {
             reviews: 37,
             stars: 5,
             askAge: null,
-            image: "../../assets/images/Beef-Cheese.jpg",
+            image: "../../assets/images/burger.jpg",
             eta: 7,
         },
     ],
