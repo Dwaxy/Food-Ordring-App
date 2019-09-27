@@ -21,6 +21,7 @@
     +flexCenter()
     margin: 0 auto
     margin-top: 15px
+    cursor: pointer
     button
         padding: 15px
         color: $white
@@ -51,6 +52,23 @@
         color: $darkBlue
         border-radius: 15px 0 0 15px
 
+.review-button, .review-button-active
+    height: 100px
+    width: 50%
+    cursor: pointer
+    +flexCenter()
 
+.review-button
+    background-color: $darkBlue
+    olor: $white
+    button
+        +buttonReset()
+        color: $white
 
-
+.review-button-active
+    background-color: $white
+    border: 4px solid $darkBlue 
+    color $darkBlue
+    button
+        +buttonReset()
+        color $darkBlue

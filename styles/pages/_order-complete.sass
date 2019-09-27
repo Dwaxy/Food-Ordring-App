@@ -1,0 +1,85 @@
+#reviews
+    h1
+        font-family: 'Permanent Marker', cursive
+        color: $darkBlue
+        text-align: center
+        font-size: 30px
+        padding: 60px 20px 60px 20px
+    .review-holder
+        max-width: 700px
+        width: auto
+        margin: 0 auto
+        background-color: $greyWhite
+    .buttons-holder
+        display: flex
+    .stars
+        width: max-content
+        margin: 0 auto
+        font-size: 30px
+        span
+            margin: 0 auto
+
+    textarea
+        resize: none
+        margin: 0 auto
+        display: block
+        border: none
+        background-color: transparent
+
+    .give-review-holder
+        position: absolute
+        bottom: 30px
+        left: 0 
+        right: 0
+        .underline
+            +underline(200px)
+        .char-left
+            margin: 0 auto
+            text-align: center
+            padding: 20px
+        .give-review-button
+            margin: 0 auto
+            margin-top: 20px
+
+    .review-item, .review-stay
+        height: 500px
+        position: relative
+
+    .review-item
+        display: none
+        margin: 0 auto
+        position: relative
+    .title-stars-holder
+        margin: 0 auto
+        padding: 20px
+    .item
+        display: flex
+        .image
+            +coverImage()
+            height: 100px
+            width: 100px
+            border-radius: 50%
+            margin: 20px
+            position: absolute
+            top: 0
+            left: 0
+
+    .review-stay
+        .stars
+            padding: 50px
+            padding-top: 30px
+            padding-bottom: 20px
+            font-size: 35px
+
+    .review-thankyou
+        display: none
+        h2
+            font-size: 35px
+            text-align: center
+            padding: 30px 0 30px 0
+
+    #order-again
+        position: absolute
+        bottom: 30px
+        left: 0 
+        right: 0

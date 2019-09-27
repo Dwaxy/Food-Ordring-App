@@ -128,5 +128,4 @@ const menuItems = {
     ]
 }
 
-console.log(menuItems.burgers)
 

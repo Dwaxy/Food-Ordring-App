@@ -4,12 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Order Complete</title>
+    <title>Reviews</title>
     <link rel="stylesheet" href="dist/css/index.min.css">
 </head>
 <body>
-  <div class="container">
-      <p>Order Complete</p>
+  <div id="reviews">
+    <h1>Thank you for your Order!</h1>
+
+    <div class="review-holder">
+      <div class="buttons-holder">
+        <div class="review-button-active" id="stay"><button>How Was Your Say?</button></div>
+        <div class="review-button" id="item"><button>Review An Item</button></div>
+      </div>
+
+      <div class="review-content-holder">
+
+        <div class="review-stay">
+          <div class="stars">
+            <span>☆☆☆☆☆</span>
+          </div>
+          <textarea placeholder="Review..." id="reviewStay" autofocus></textarea>
+
+          <div class="give-review-holder">
+              <div class="char-left">180  Characters Left</div>
+              <div class="underline"></div>
+              <div class="give-review-button main-button">
+                <button>Give Review</button>
+              </div>
+          </div>
+
+        </div>
+
+        <div class="review-item">
+          <div class="item">
+            <div class="image"></div>
+            <div class="title-stars-holder">
+              <div class="title"></div>
+              <div class="stars">
+                <span>☆☆☆☆☆</span>
+              </div>
+            </div>
+          </div>
+          <textarea placeholder="Review..." id="reviewItem" autofocus></textarea>
+
+          <div class="give-review-holder">
+            <div class="char-left">180  Characters Left</div>
+            <div class="underline"></div>
+            <div class="give-review-button main-button">
+              <button>Give Review</button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="review-thankyou">
+          <h2>Thank you for the Review!</h2>
+          <h2>Feedback is always appreciated.</h2>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="main-button" id="order-again">
+      <button>Order Again</button>
+    </div>
+
   </div>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="js/data/menu-items.js"></script>
+  <script src="js/lib/helpers.js"></script>
+  <script src="js/order-complete/order-complete.js"></script>
 </body>
 </html>

@@ -13,7 +13,7 @@ function move() {
         }
     }
     setTimeout(function(){
-        window.location.replace("/item-reviews.html")
+        window.location.replace("/order-complete.html")
     }, 3000)
 }
 
