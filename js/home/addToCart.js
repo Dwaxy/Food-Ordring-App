@@ -4,12 +4,23 @@ $(".menu-item").click(function() {
     $("#help-order-buttons").css("display", "flex")
 })
 
+
+let itemEtas = []
+var totalEta = 0
+setTotalEta = function(item) {
+    itemEtas.push(item)
+    itemEtas.reduce(add,0)
+    function add(accumulator, a) {
+        totalEta = accumulator + a
+        return totalEta
+    }
+    localStorage.setItem('totalEta', JSON.stringify(totalEta))
+}
+
 buildCartItem = function(menuItem) {
     const newCartItem = $("#cartitem-template")
         .clone(false)
         .removeAttr("id")
-
-    console.log(newCartItem)
 
     newCartItem.insertAfter("#cartitem-template")
     //Get object and index atts from clicked menu item
@@ -29,6 +40,8 @@ buildCartItem = function(menuItem) {
         setData(".toggleReviews > span", "View Reviews", newCartItem)
     }
     setTotalPrice(".cart", data.price)
+    console.log(data.eta)
+    setTotalEta(data.eta)
 }
 
 $(".menu-item").click(function() {

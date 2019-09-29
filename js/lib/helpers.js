@@ -77,6 +77,15 @@ setStars = function(stars, el) {
     $(el).find(".stars > span").text(counts[stars])
 }
 
+//Some code from https://stackoverflow.com/questions/1230233/how-to-find-the-sum-of-an-array-of-numbers
+let prices = []
+var addedPrices = 0
 setTotalPrice = function(perant, newPrice) {
-    setData("#total-price", "Total Price $"+newPrice, perant)
+    prices.push(newPrice)
+    prices.reduce(add,0)
+    function add(accumulator, a) {
+        addedPrices = accumulator + a
+        return addedPrices
+    }
+    setData("#total-price", "Total Price $"+addedPrices, perant)
 }

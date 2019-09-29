@@ -19,10 +19,10 @@ function move() {
 
 move()
 
-// TODO add up total ETA (when cart is fixed)
-// is null if no order item exists beforhand
+
 const items = getAndSetLocalStorage.get()[0] || []
+const totalEta = JSON.parse(localStorage.getItem('totalEta'))
 if(items) {
     const itemData = menuItems[items.cat][items.itemIndex]
-    setData(".eta", "ETA: "+ itemData.eta+ " minutes", ".eta-holder")
+    setData(".eta", "ETA: "+ totalEta + " minutes", ".eta-holder")
 }
