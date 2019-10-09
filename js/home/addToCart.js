@@ -29,7 +29,8 @@ buildCartItem = function(menuItem) {
 
     const noOrderItems = getAndSetLocalStorage.get()
     const data = getAndSetDomData(menuItem, newCartItem, noOrderItems === null ? 0 : noOrderItems.length++)
-    //console.log(data)
+    console.log("item data, ")
+    console.log(data)
 
     // Apply data to the cloned cart item template
     newCartItem.find(".image").css("background-image", "url(" + data.image + ")")
@@ -40,7 +41,6 @@ buildCartItem = function(menuItem) {
         setData(".toggleReviews > span", "View Reviews", newCartItem)
     }
     setTotalPrice(".cart", data.price)
-    console.log(data.eta)
     setTotalEta(data.eta)
 }
 
