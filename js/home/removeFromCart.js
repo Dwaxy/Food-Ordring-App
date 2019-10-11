@@ -4,7 +4,10 @@ removeCartItem = function(cartItem) {
     const oldCartItems = getAndSetLocalStorage.get()
     const newCartItems = oldCartItems.filter(function(el) { return el.orderId != data.id; })
     getAndSetLocalStorage.replaceAllWith(newCartItems)
-    $(cartItem).remove()
+    $(cartItem).fadeOut("fast", function() { 
+        $(this).remove() 
+    })
+
 }
 
 

@@ -22,7 +22,11 @@ buildCartItem = function(menuItem) {
         .clone(false)
         .removeAttr("id")
 
-    newCartItem.insertAfter("#cartitem-template")
+    newCartItem
+        .insertAfter("#cartitem-template")
+        .hide()
+        .fadeIn()
+        
     //Get object and index atts from clicked menu item
     //Also set that same data into the dom of the cart item
     //As well as set that data to local storage
