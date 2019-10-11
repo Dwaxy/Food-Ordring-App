@@ -121,9 +121,100 @@ const menuItems = {
         },
     ],
 
+    sides: [
+        {
+            cat: "sides",
+            title: "BB Fried Chicken",
+            price: 15,
+            reviews: 14,
+            stars: 5,
+            askAge: null,
+            image: "../../assets/images/BB-Fried-Chicken.jpg",
+            eta: 1,
+        },
+
+        {
+            cat: "sides",
+            title: "BB Fried Tofu",
+            price: 15,
+            reviews: 11,
+            stars: 4,
+            askAge: null ,
+            image: "../../assets/images/New-BB-Tofu.jpg",
+            eta: 1 ,
+        },
+
+        {
+            cat: "sides",
+            title: "Shoestring Fries",
+            price: 6,
+            reviews: 23,
+            stars: 5,
+            askAge: null ,
+            image: "../../assets/images/Shoestring-Fries.jpg",
+            eta: 2 ,
+        },
+
+        {
+            cat: "sides",
+            title: "Curly Fries",
+            price: 6,
+            reviews: 16,
+            stars: 3,
+            askAge: null ,
+            image: "../../assets/images/Curly-Fries.jpg",
+            eta: 1 ,
+        },
+
+       
+
+        
+    ],
+
     drinks: [
         {
-
+            cat: "drinks",
+            title: "Curly Fries",
+            price: 6,
+            reviews: 16,
+            stars: 3,
+            askAge: null ,
+            image: "../../assets/images/Curly-Fries.jpg",
+            eta: 1 ,
         },
-    ]
+
+        {
+            cat: "drinks",
+            title: "Buzzy Lemonade",
+            price: 13,
+            reviews: 22,
+            stars: 5,
+            askAge: true,
+            image: "../../assets/images/260A4505.jpg",
+            eta: 1 ,
+        },
+
+        {
+            cat: "drinks",
+            title: "Chocolate Shake",
+            price: 8,
+            reviews: 31,
+            stars: 5,
+            askAge: null,
+            image: "../../assets/images/Chocolate.jpg",
+            eta: 3 ,
+        },
+
+        {
+            cat: "drinks",
+            title: "Hokey Pokey Shake",
+            price: 12,
+            reviews: 13,
+            stars: 4,
+            askAge: null,
+            image: "../../assets/images/Hokey-Pokey.jpg",
+            eta: 3 ,
+        },
+    ],
+    
 }
