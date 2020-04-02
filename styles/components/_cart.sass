@@ -1,8 +1,7 @@
+
+
 .cart
-    width: 340px
-    min-width: 340px
-    display: flex
-    flex-direction: column
+    max-width: 370px
     position: fixed
     .cart-heading, #cart-blurb
         text-align: center
@@ -29,13 +28,19 @@
         display: none
         position: relative
         top: 0
-        min-height: calc(100vh - 420px)
         padding-left: 20px
-        overflow: hidden
+        height: 53vh
         overflow-y: auto
         border-left: 3px solid $darkBlue
     .button-holder
         width: 100%
-        height: auto
         position: relative
         +flexCenter()
+
+.cart-holder
+    background-color: $white
+    display: flex
+    justify-content: center
+    width: 340px
+    @media screen and (max-width: 750px)
+        width: 100% !important

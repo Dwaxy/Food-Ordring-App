@@ -32,7 +32,7 @@ $(".give-review-button").click(function() {
 $("#stay, #item").click(function() {
     $(".review-thankyou").hide()
 })
-
+ 
 $("#order-again").click(function() {
     window.location.replace("/index.html")
 })
